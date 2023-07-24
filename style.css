@@ -1,0 +1,190 @@
+/* Custom Font Comic Sans */
+@font-face {
+  font-family: "Robot";
+  src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
+  /* Sesuaikan dengan lokasi file font yang Anda simpan */
+}
+
+/* Menggunakan font Comic Sans */
+body {
+  font-family: "Robot", sans-serif;
+}
+
+/* Custom CSS untuk tampilan skills yang lebih menarik */
+#skills .card {
+  border: 2px solid #1abc9c;
+  background-color: #f8f9fa;
+  transition: transform 0.2s;
+  height: 100%;
+  /* Set tinggi card menjadi 100% */
+}
+
+#skills .card:hover {
+  transform: scale(1.05);
+}
+
+#skills .card .card-body {
+  padding: 2rem;
+  height: 100%;
+  /* Set tinggi card-body menjadi 100% */
+}
+
+#skills .skill-icon {
+  font-size: 2.5rem;
+  color: #1abc9c;
+  margin-bottom: 1rem;
+}
+
+#skills .skill-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #616161;
+}
+
+#skills .skill-description {
+  margin-top: 1rem;
+  color: #616161;
+}
+
+/* Memastikan semua ukuran per baris (row) sama */
+#skills .col-md-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  display: flex;
+  /* Gunakan flexbox untuk mengatur tinggi card */
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  #skills .col-md-4 {
+    flex: 0 0 50%;
+    /* 2 card per baris */
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 575px) {
+  #skills .col-md-4 {
+    flex: 0 0 100%;
+    /* 1 card per baris */
+    max-width: 100%;
+  }
+}
+
+/* Custom CSS untuk tampilan portfolio yang lebih keren */
+#portfolio .card {
+  /* border: 2px solid #1abc9c; */
+  background-color: #f8f9fa;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+#portfolio .card:hover {
+  transform: scale(1.05);
+}
+
+#portfolio .card .card-body {
+  padding: 2rem;
+}
+
+#portfolio .project-image {
+  max-height: 200px;
+  /* Tentukan tinggi maksimum gambar proyek */
+  object-fit: cover;
+  /* Agar gambar tidak terdistorsi */
+  border-radius: 10px;
+}
+
+#portfolio .project-name {
+  /* font-size: 1.5rem; */
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #616161;
+}
+
+/* Memastikan semua ukuran per baris (row) sama */
+#portfolio .col-md-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+/* Mengubah container portfolio menjadi scroll horizontal */
+#portfolio .scroll-wrapper {
+  width: 100%;
+  /* Pastikan lebar container sesuai dengan lebar layar */
+  overflow: hidden;
+  /* Sembunyikan konten yang melebihi lebar container */
+  position: relative;
+  /* Diperlukan untuk mengatur posisi konten */
+}
+
+#portfolio .scroll-content {
+  display: flex;
+  animation: scrollAnimation 30s linear infinite;
+  /* Animasi perpindahan konten dengan durasi 20 detik (sesuaikan jika diperlukan) */
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa;
+  /* Warna latar belakang navbar */
+  z-index: 100;
+  /* Pastikan navbar berada di atas konten lainnya */
+}
+
+
+/* Menambahkan custom CSS untuk membuat gambar berbentuk bulat */
+.rounded-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/* CSS untuk label menu active */
+.navbar .navbar-nav .nav-item .nav-link.active {
+  color: white;
+}
+
+
+
+/* CSS untuk footer */
+footer {
+  background-color: #333;
+  /* Warna latar belakang footer */
+  color: white;
+  /* Warna teks pada footer */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/* CSS untuk tautan media sosial */
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+/* CSS untuk mengubah tampilan ikon menjadi tangan saat di hover */
+.social-icons a:hover {
+  cursor: pointer;
+}
+
+section {
+  margin-top: 0;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
+    /* Mulai dari posisi awal */
+  }
+
+  100% {
+    transform: translateX(-100%);
+    /* Pindah ke posisi berikutnya (100% = lebar container) */
+  }
+}

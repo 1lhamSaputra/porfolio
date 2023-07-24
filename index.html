@@ -2,779 +2,411 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Porfolio</title>
-
-  <!-- Custom fonts for this theme -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-  <!-- Theme CSS -->
-  <link href="css/freelancer.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Link CSS Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link Font Awesome untuk ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="page-top">
+<body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+  <!-- Navigasi -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #2c3e50!important;" id="navbar">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Ilham Saputra</a>
-      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#home">HOME</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">STRENGTHS & SKILLS</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">PROJECTS</a>
           </li>
+          <!-- Tambahkan menu navigasi lainnya di sini -->
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Masthead -->
-  <header class="masthead bg-primary text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
-
-      <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" src="img/avataaars.svg" alt="">
-
-      <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0">Ilham Saputra</h1>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas 	fas fa-minus"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">Software Engineer</p>
-
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid" style="background-color: #1abc9c;color: white;" id="home">
+    <div class="container text-center">
+      <h1 class="display-4">Ilham Saputra</h1>
+      <p class="lead">Software Engineer</p>
     </div>
-  </header>
+  </div>
 
-  <!-- Portfolio Section -->
-  <section class="page-section portfolio" id="portfolio">
+  <!-- Skills -->
+  <section id="skills" class="p-5">
     <div class="container">
-
-      <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas 	fas fa-minus"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Portfolio Grid Items -->
+      <h2 class="text-center mb-5 mt-3" style="font-weight: bolder;color: #616161;">STRENGTHS & SKILLS</h2>
       <div class="row">
-
-        <!-- Portfolio Item 11 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto border" data-toggle="modal" data-target="#portfolioModal11">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
+        <div class="col-md-4 p-2">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fas fa-code skill-icon"></i>
+              <h3 class="skill-title">5+ years of professional experience</h3>
+              <p class="skill-description">I have 5+ years of professional experience as a web developer and programmer, working on various projects and honing my skills.</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/money-keeper.png" alt="">
           </div>
         </div>
-
-        <!-- Portfolio Item 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto border" data-toggle="modal" data-target="#portfolioModal4">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
+        <div class="col-md-4 p-2">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fas fa-tasks skill-icon"></i>
+              <h3 class="skill-title">Committed to delivering high-quality work</h3>
+              <p class="skill-description">I am committed to delivering high-quality work within the given timeline, ensuring client satisfaction and project success.</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/simapatd.png" alt="">
           </div>
         </div>
-
-        <!-- Portfolio Item 5 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto border" data-toggle="modal" data-target="#portfolioModal5">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
+        <div class="col-md-4 p-2">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fas fa-lightbulb skill-icon"></i>
+              <h3 class="skill-title">Strong problem-solving skills</h3>
+              <p class="skill-description">I possess strong problem-solving skills and attention to detail, enabling me to troubleshoot and resolve complex issues effectively.</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/ebilling.png" alt="">
           </div>
         </div>
-
-        <!-- Portfolio Item 6 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto border" data-toggle="modal" data-target="#portfolioModal6">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
+        <div class="col-md-4 p-2">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fab fa-php skill-icon"></i>
+              <h3 class="skill-title">Proficient in programming languages and web frameworks</h3>
+              <p class="skill-description">I am proficient in various programming languages and web frameworks, including PHP, JavaScript, Codeigniter, Laravel, JQuery, Bootstrap, and more.</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/efilling.png" alt="">
           </div>
         </div>
-
-        <!-- Portfolio Item 7 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto border" data-toggle="modal" data-target="#portfolioModal7">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
+        <div class="col-md-4 p-2">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fas fa-globe skill-icon"></i>
+              <h3 class="skill-title">Experienced in developing modern web applications</h3>
+              <p class="skill-description">I have experience in developing modern, functional, and user-friendly web applications that meet the latest industry standards.</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/siependa.png" alt="">
           </div>
         </div>
-
-        <!-- Portfolio Item 8 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto border" data-toggle="modal" data-target="#portfolioModal8">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
+        <div class="col-md-4 p-2">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fas fa-users skill-icon"></i>
+              <h3 class="skill-title">Ability to work independently and as a team player</h3>
+              <p class="skill-description">I am capable of working independently on projects, as well as collaborating with team members to achieve common goals.</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/bendaharaonline.png" alt="">
           </div>
         </div>
-
-        <!-- Portfolio Item 9 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto border" data-toggle="modal" data-target="#portfolioModal9">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
+        <div class="col-md-4 p-2">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fas fa-comments skill-icon"></i>
+              <h3 class="skill-title">Excellent communication and interpersonal skills</h3>
+              <p class="skill-description">I possess excellent communication and interpersonal skills, which facilitate effective communication with clients and team members.</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/esipuga.png" alt="">
           </div>
         </div>
-
-        <!-- Portfolio Item 10 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto border" data-toggle="modal" data-target="#portfolioModal10">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
+        <div class="col-md-4 p-2">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fas fa-terminal skill-icon"></i>
+              <h3 class="skill-title">Skilled in Linux command-line interface</h3>
+              <p class="skill-description">I am skilled in using Linux command-line interface tools and utilities, allowing me to efficiently manage web servers and applications.</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/sisbaper.png" alt="">
-          </div>
-        </div><!-- Portfolio Item 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto border" data-toggle="modal" data-target="#portfolioModal1">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
           </div>
         </div>
-
-
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto border" data-toggle="modal" data-target="#portfolioModal2">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
+        <div class="col-md-4 p-2">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fas fa-database skill-icon"></i>
+              <h3 class="skill-title">Database design, development, and management</h3>
+              <p class="skill-description">I have experience in designing, developing, and managing databases using MySQL and PostgreSQL, ensuring efficient and secure data storage for web applications.</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
           </div>
         </div>
-
-        <!-- Portfolio Item 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto border" data-toggle="modal" data-target="#portfolioModal3">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-          </div>
-        </div>
-
-
-
       </div>
-      <!-- /.row -->
-
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="page-section bg-primary text-white mb-0" id="about">
+
+
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-5" style="background-color: #1abc9c;">
     <div class="container">
+      <h2 class="text-center mb-5" style="font-weight: bolder;color: white;">PROJECTS</h2>
+      <div class="scroll-wrapper">
+        <div class="scroll-content" id="project-container">
+          <!-- Tambahkan proyek-proyek di sini -->
+          <div class="col-md-3 mb-4 p-1">
+            <div class="card text-center" data-toggle="modal" data-target="#simapatda">
+              <div class="card-body">
+                <img src="assets/img/noimages.jpg" alt="SIMAPATDA" class="project-image">
+                <h6 class="project-name">SIMAPATDA</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 p-1">
+            <div class="card text-center" data-toggle="modal" data-target="#ebilling">
+              <div class="card-body">
+                <img src="assets/img/noimages.jpg" alt="E-Billing" class="project-image">
+                <h6 class="project-name">E-Billing</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 p-1">
+            <div class="card text-center" data-toggle="modal" data-target="#efilling">
+              <div class="card-body">
+                <img src="assets/img/noimages.jpg" alt="E-Filing" class="project-image">
+                <h6 class="project-name">E-Filing</h6>
+              </div>
+            </div>
+          </div>
 
-      <!-- About Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
 
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas 	fas fa-minus"></i>
+          <div class="col-md-3 mb-4 p-1">
+            <div class="card text-center" data-toggle="modal" data-target="#siependa">
+              <div class="card-body">
+                <img src="assets/img/noimages.jpg" alt="SIEPENDA" class="project-image">
+                <h6 class="project-name">SIEPENDA</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 p-1">
+            <div class="card text-center" data-toggle="modal" data-target="#bendonline">
+              <div class="card-body">
+                <img src="assets/img/noimages.jpg" alt="BENDONLINE" class="project-image">
+                <h6 class="project-name">BENDONLINE</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 p-1">
+            <div class="card text-center" data-toggle="modal" data-target="#esipuga">
+              <div class="card-body">
+                <img src="assets/img/noimages.jpg" alt="ESIPUGA" class="project-image">
+                <h6 class="project-name">ESIPUGA</h6>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-3 mb-4 p-1">
+            <div class="card text-center" data-toggle="modal" data-target="#sisbaper">
+              <div class="card-body">
+                <img src="assets/img/noimages.jpg" alt="SISBAPER" class="project-image">
+                <h6 class="project-name">SISBAPER</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 p-1">
+            <div class="card text-center" data-toggle="modal" data-target="#ependaftaran">
+              <div class="card-body">
+                <img src="assets/img/noimages.jpg" alt="E-PENDAFTARAN" class="project-image">
+                <h6 class="project-name">E-PENDAFTARAN</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 p-1">
+            <div class="card text-center" data-toggle="modal" data-target="#moneykeeper">
+              <div class="card-body">
+                <img src="assets/img/noimages.jpg" alt="MONEY KEEPER" class="project-image">
+                <h6 class="project-name">MONEY KEEPER</h6>
+              </div>
+            </div>
+          </div>
+          <!-- Tambahkan proyek lainnya di sini -->
+          <!-- ... (kode proyek lainnya seperti sebelumnya) ... -->
         </div>
-        <div class="divider-custom-line"></div>
       </div>
-
-      <!-- About Section Content -->
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p style="text-align: justify;" class="lead">Hello my name is Ilham Saputra, I am a web developer and web programer with 5+ years of work experience. I live in Bengkong, Batam.</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p style="text-align: justify;" class="lead"> I understand several programming languages and web frameworks such as PHP, Javascript, Codeigniter, Laravel, JQuery and so on. I also linux user.</p>
-        </div>
-      </div>
-
-      <!-- About Section Button -->
-      <!-- <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
-          <i class="fas fa-download mr-2"></i>
-          Free Download!
-        </a>
-      </div> -->
-
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="page-section" id="contact">
-    <div class="container">
-
-      <!-- Contact Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas 	fas fa-minus"></i>
+  <!-- Modal Deskripsi Proyek simapatda -->
+  <div class="modal fade bd-example-modal-lg" id="simapatda" tabindex="-1" role="dialog" aria-labelledby="simapatdaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="simapatdaLabel">SIMAPATDA</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Contact Section Form -->
-      <div class="row">
-        <div class="col-lg-5 mx-auto">
-          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-          <form name="sentMessage" id="contactForm" novalidate="novalidate">
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Name</label>
-                <input style="background-color: white;" disabled="disabled" class="form-control" id="name" type="text" placeholder="Name" data-validation-required-message="Please enter your name." value="Telp.    +62 858 3637 3885">
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Name</label>
-                <input style="background-color: white;" disabled="disabled" class="form-control" id="name" type="text" placeholder="Name" data-validation-required-message="Please enter your name." value="WA       +62 858 3637 3885">
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Name</label>
-                <input style="background-color: white;" disabled="disabled" class="form-control" id="name" type="text" placeholder="Name" data-validation-required-message="Please enter your name." value="Email    ilham05saputra@gmail.com">
-              </div>
-            </div>
-          </form>
+        <div class="modal-body">
+          <!-- <p style="text-align: justify;">SIMAPATDA is an integrated application module that manages tax for Dinas Pendapatan Daerah. The application module consist of registration taxpayer, advertisement registration, taxpayer card, payment letter and report.</p> -->
         </div>
       </div>
-
     </div>
-  </section>
+  </div>
+
+  <!-- Modal Deskripsi Proyek ebilling -->
+  <div class="modal fade bd-example-modal-lg" id="ebilling" tabindex="-1" role="dialog" aria-labelledby="ebillingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ebillingLabel">E-Billing</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <p style="text-align: justify;">An integrated system, in collaboration with SIMAPATDA and leading bank providers, offers Batam citizens a seamless solution to generate billing codes for their tax payments, covering a range of services including billboards, restaurants, hotels, entertainment, parking, PPJU, and MBLB. This innovative platform simplifies the tax payment process for users and ensures accurate and timely payments, contributing to the smooth functioning of the local economy.</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Deskripsi Proyek efilling -->
+  <div class="modal fade bd-example-modal-lg" id="efilling" tabindex="-1" role="dialog" aria-labelledby="efillingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="efillingLabel">E-Filling</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <p style="text-align: justify;">An integrated system, in collaboration with SIMAPATDA and leading bank providers, offers Batam citizens a seamless solution to generate billing codes for their tax payments, covering a range of services including billboards, restaurants, hotels, entertainment, parking, PPJU, and MBLB. This innovative platform simplifies the tax payment process for users and ensures accurate and timely payments, contributing to the smooth functioning of the local economy.</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Deskripsi Proyek siependa -->
+  <div class="modal fade bd-example-modal-lg" id="siependa" tabindex="-1" role="dialog" aria-labelledby="siependaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="siependaLabel">SIEPENDA</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <p style="text-align: justify;">An integrated system, in collaboration with SIMAPATDA and leading bank providers, offers Batam citizens a seamless solution to generate billing codes for their tax payments, covering a range of services including billboards, restaurants, hotels, entertainment, parking, PPJU, and MBLB. This innovative platform simplifies the tax payment process for users and ensures accurate and timely payments, contributing to the smooth functioning of the local economy.</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Deskripsi Proyek bendonline -->
+  <div class="modal fade bd-example-modal-lg" id="bendonline" tabindex="-1" role="dialog" aria-labelledby="bendonlineLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bendonlineLabel">BENDONLINE</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <p style="text-align: justify;">An integrated system, in collaboration with SIMAPATDA and leading bank providers, offers Batam citizens a seamless solution to generate billing codes for their tax payments, covering a range of services including billboards, restaurants, hotels, entertainment, parking, PPJU, and MBLB. This innovative platform simplifies the tax payment process for users and ensures accurate and timely payments, contributing to the smooth functioning of the local economy.</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Deskripsi Proyek esipuga -->
+  <div class="modal fade bd-example-modal-lg" id="esipuga" tabindex="-1" role="dialog" aria-labelledby="esipugaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="esipugaLabel">ESIPUGA</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <p style="text-align: justify;">An integrated system, in collaboration with SIMAPATDA and leading bank providers, offers Batam citizens a seamless solution to generate billing codes for their tax payments, covering a range of services including billboards, restaurants, hotels, entertainment, parking, PPJU, and MBLB. This innovative platform simplifies the tax payment process for users and ensures accurate and timely payments, contributing to the smooth functioning of the local economy.</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Deskripsi Proyek sisbaper -->
+  <div class="modal fade bd-example-modal-lg" id="sisbaper" tabindex="-1" role="dialog" aria-labelledby="sisbaperLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sisbaperLabel">SISBAPER</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <p style="text-align: justify;">An integrated system, in collaboration with SIMAPATDA and leading bank providers, offers Batam citizens a seamless solution to generate billing codes for their tax payments, covering a range of services including billboards, restaurants, hotels, entertainment, parking, PPJU, and MBLB. This innovative platform simplifies the tax payment process for users and ensures accurate and timely payments, contributing to the smooth functioning of the local economy.</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Deskripsi Proyek ependaftaran -->
+  <div class="modal fade bd-example-modal-lg" id="ependaftaran" tabindex="-1" role="dialog" aria-labelledby="ependaftaranLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ependaftaranLabel">E-PENDAFTARAN</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <p style="text-align: justify;">An integrated system, in collaboration with SIMAPATDA and leading bank providers, offers Batam citizens a seamless solution to generate billing codes for their tax payments, covering a range of services including billboards, restaurants, hotels, entertainment, parking, PPJU, and MBLB. This innovative platform simplifies the tax payment process for users and ensures accurate and timely payments, contributing to the smooth functioning of the local economy.</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Deskripsi Proyek moneykeeper -->
+  <div class="modal fade bd-example-modal-lg" id="moneykeeper" tabindex="-1" role="dialog" aria-labelledby="moneykeeperLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="moneykeeperLabel">MONEY KEEPER</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <p style="text-align: justify;">An integrated system, in collaboration with SIMAPATDA and leading bank providers, offers Batam citizens a seamless solution to generate billing codes for their tax payments, covering a range of services including billboards, restaurants, hotels, entertainment, parking, PPJU, and MBLB. This innovative platform simplifies the tax payment process for users and ensures accurate and timely payments, contributing to the smooth functioning of the local economy.</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <div class="row">
-
-        <!-- Footer Location -->
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">Bengkong, Batam, <br> Kepuluan Riau </p>
-        </div>
-
-        <!-- Footer Social Icons -->
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Around the Web</h4>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/ilham.f.harazuku">
-            <i class="fab fa-fw fa-facebook-f"></i>
-          </a>
-          <!-- <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/isapoetera">
-            <i class="fab fa-fw fa-twitter"></i>
-          </a> -->
-          <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/ilham-saputra-489198175/">
-            <i class="fab fa-fw fa-linkedin-in"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/1lhamSaputra">
-            <i class="fab fa-fw fab fa-github"></i>
-          </a>
-        </div>
-
-        <!-- Footer About Text -->
-        <!-- <div class="col-lg-4">
-          <h4 class="text-uppercase mb-4">About Theme</h4>
-          <p class="lead mb-0">Bootstrap theme created by
-            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-        </div> -->
-
+  <footer class="bg-dark text-light py-3" style="background-color: #2c3e50!important;">
+    <div class="container text-center">
+      <p>&copy; 2023 | Made with ❤️ in Batam, Indonesia.</p>
+      <div class="social-icons">
+        <!-- <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
+        <!-- <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> -->
+        <!-- <a href="#" target="_blank"><i class="fab fa-instagram"></i></a> -->
+        <a href="mailto:ilham05saputra@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/ilham-saputra-489198175" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/1lhamSaputra" target="_blank"><i class="fab fa-github"></i></a>
+        <!-- <a href="#" target="_blank"><i class="fab fa-skype"></i></a> -->
+        <!-- Tambahkan tautan media sosial lainnya di sini -->
       </div>
     </div>
   </footer>
+  
 
-  <!-- Copyright Section -->
-  <section class="copyright py-4 text-center text-white">
-    <div class="container">
-      <small>Copyright &copy; 2023</small> <br>
-      <small>Bootstrap theme created by &copy; <a href="http://startbootstrap.com">Start Bootstrap</a></small> 
-    </div>
-  </section>
-
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-to-top d-lg-none position-fixed ">
-    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
-
-  <!-- Portfolio Modals -->
-
-  <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">SPH Batam</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas 	fas fa-minus"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Lamoist</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas 	fas fa-minus"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">First Choice</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas 	fas fa-minus"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">SIMAPATDA</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas 	fas fa-minus"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/simapatd.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5"></p>
-                <p class="mb-4">SIMAPATDA is an integrated application module that manages tax for Dinas Pendapatan Daerah. The application module consist of registration taxpayer, advertisement registration, taxpayer card, payment letter and report.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">EBILLING</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas 	fas fa-minus"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/ebilling.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5"></p>
-                <p class="mb-4">An integrated system with SIMAPATDA and bank provider that helps Batam citizen to generate their billing code for tax payment including Billboard, Restaurant, Hotel, Entertainment, Parking, PPJU and MBLB.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">EFILING</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas 	fas fa-minus"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/efilling.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5"></p>
-                <p class="mb-4">An administration system that managed file archive based on file types and can be filtered by division. E-Filling also provide incoming and outcoming letter management which proccessed by Sekretariat Division starting from Division Chief until staff.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 7 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal7Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">SIEPENDA</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas 	fas fa-minus"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/siependa.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5"></p>
-                <p class="mb-4">An dashboard application is integrated with SIMPATDA to generate information about the value of PAD realization, local tax realization, regional distribution realization, targets and realization, regional tax targets and realization, regional retribution targets and realization.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 8 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal8Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">BENDAHARA ONLINE</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas 	fas fa-minus"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/bendaharaonline.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5"></p>
-                <p class="mb-4">An integrated system with SIMAPATDA which manages Retribusi Daerah payment collection and finance reports that used by local government departments.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 9 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal9Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ESIPUGA</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas 	fas fa-minus"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/esipuga.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5"></p>
-                <p class="mb-4">A planning system for Dinas Pemberdayaan Perempuan Batam which want to create a database for their survey data regrading implementation of woman empowerment and child protection law.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 10 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-labelledby="portfolioModal10Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">SISBAPERSISBAPER</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas 	fas fa-minus"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/sisbaper.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5"></p>
-                <p class="mb-4">An application system that manages goods based on SKPD and its sub units. used for several transactions such as receiving, distributing, requesting and taking. as well as reports for each transaction.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 11 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-labelledby="portfolioModal11Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">MONEY KEEPER</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas 	fas fa-minus"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/money-keeper.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5"></p>
-                <p class="mb-4">An application created to facilitate the management of personal financial arrangements, equipped with recording of transactions such as income, expenses, etc. also accompanied with a report.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/freelancer.min.js"></script>
-
+  <!-- Link JavaScript Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+  </script>
+  
 </body>
 
 </html>
