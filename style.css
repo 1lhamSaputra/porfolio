@@ -8,14 +8,18 @@
 /* Menggunakan font Comic Sans */
 body {
   font-family: "Robot", sans-serif;
+  background-color: #1abc9c2e;
 }
 
 /* Custom CSS untuk tampilan skills yang lebih menarik */
 #skills .card {
-  border: 2px solid #1abc9c;
-  background-color: #f8f9fa;
+  border-radius: 20px;
+  border: 2px solid #155724;
+  background-color: #1abc9c;
   transition: transform 0.2s;
   height: 100%;
+  cursor: pointer;
+  box-shadow: 16px 14px 15px rgba(0, 0, 0, 0.3);
   /* Set tinggi card menjadi 100% */
 }
 
@@ -30,20 +34,21 @@ body {
 }
 
 #skills .skill-icon {
-  font-size: 2.5rem;
-  color: #1abc9c;
+  font-size: 1.5rem;
+  color: whitesmoke;
   margin-bottom: 1rem;
 }
 
 #skills .skill-title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
-  color: #616161;
+  color: whitesmoke;
 }
 
 #skills .skill-description {
+  font-size: 1rem;
   margin-top: 1rem;
-  color: #616161;
+  color: whitesmoke;
 }
 
 /* Memastikan semua ukuran per baris (row) sama */
@@ -193,4 +198,15 @@ section {
   width: 100%;
   height: 200px; /* Anda bisa sesuaikan ukuran ini */
   object-fit: cover; /* Memastikan gambar menyesuaikan tanpa distorsi */
+}
+
+.skills {
+  font-weight: bolder;
+  color: whitesmoke;
+  background-color: #1abc9c;
+  border-radius: 5px;
+  border: 2px solid #155724;
+  box-shadow: 16px 14px 15px rgba(0, 0, 0, 0.3);
+  width: auto;
+  font-size: 2rem;
 }
