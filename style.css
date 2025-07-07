@@ -5,21 +5,15 @@
   /* Sesuaikan dengan lokasi file font yang Anda simpan */
 }
 
-/* Menggunakan font Comic Sans */
-body {
-  font-family: "Robot", sans-serif;
-  background-color: #1abc9c2e;
-}
-
 /* Custom CSS untuk tampilan skills yang lebih menarik */
 #skills .card {
-  border-radius: 20px;
-  border: 2px solid #155724;
-  background-color: #1abc9c;
+  border-radius: 8px;
+  border: unset;
+  background-color: #00b894;
   transition: transform 0.2s;
   height: 100%;
   cursor: pointer;
-  box-shadow: 16px 14px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   /* Set tinggi card menjadi 100% */
 }
 
@@ -35,20 +29,20 @@ body {
 
 #skills .skill-icon {
   font-size: 1.5rem;
-  color: whitesmoke;
+  color: #2d3436;
   margin-bottom: 1rem;
 }
 
 #skills .skill-title {
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-weight: bold;
-  color: whitesmoke;
+  color: #2d3436;
 }
 
 #skills .skill-description {
-  font-size: 1rem;
+  font-size: 0.9375rem;
   margin-top: 1rem;
-  color: whitesmoke;
+  color: #2d3436;
 }
 
 /* Memastikan semua ukuran per baris (row) sama */
@@ -78,7 +72,7 @@ body {
 
 /* Custom CSS untuk tampilan portfolio yang lebih keren */
 #portfolio .card {
-  /* border: 2px solid #1abc9c; */
+  /* border: 2px solid #00b894; */
   background-color: #f8f9fa;
   transition: transform 0.2s;
   cursor: pointer;
@@ -97,7 +91,7 @@ body {
   /* Tentukan tinggi maksimum gambar proyek */
   object-fit: cover;
   /* Agar gambar tidak terdistorsi */
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 #portfolio .project-name {
@@ -196,17 +190,24 @@ section {
 
 .project-image {
   width: 100%;
-  height: 200px; /* Anda bisa sesuaikan ukuran ini */
-  object-fit: cover; /* Memastikan gambar menyesuaikan tanpa distorsi */
+  height: 200px;
+  /* Anda bisa sesuaikan ukuran ini */
+  object-fit: cover;
+  /* Memastikan gambar menyesuaikan tanpa distorsi */
 }
 
 .skills {
   font-weight: bolder;
-  color: whitesmoke;
-  background-color: #1abc9c;
-  border-radius: 5px;
-  border: 2px solid #155724;
-  box-shadow: 16px 14px 15px rgba(0, 0, 0, 0.3);
+  color: #2d3436;
+  background-color: #00b894;
+  border-radius: 8px;
+  /* border: 0.1px solid #155724; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   width: auto;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  color: #2d3436;
+  opacity: 90%;
 }
